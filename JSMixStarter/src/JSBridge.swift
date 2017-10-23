@@ -15,16 +15,21 @@ class JSBridge  {
         initializeJS()
     }
 
-    func jsApiCall(_ apiCallback:((Double, Double) -> Void)){
+    func jsApiCall(_ apiCallback:((_ result:String) -> Void)){
         guard let convertedCallbackToJS = JSValue(object: apiCallback, in: jsContext) else { return }
         print("convertedCallbackToJS = \(convertedCallbackToJS)")
 
         guard let funcToParse = jsContext.objectForKeyedSubscript("apiCall") else { return }
         print("funcToParse = \(funcToParse)")
 
-//        funcToParse.call(withArguments:[])
-        funcToParse.call(withArguments:[convertedCallbackToJS])
+        funcToParse.invokeMethod("apiCall", withArguments: [funcToParse])
 
+        guard let res = funcToParse.call(withArguments:[convertedCallbackToJS]) else {
+            print("unable to call function")
+            return
+        }
+        print("res = \(res)")
+        print("res = \(funcToParse.call(withArguments:[convertedCallbackToJS]))")
     }
 
     func jsProp(name:String)->Dictionary<String, String> {
