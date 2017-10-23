@@ -9,18 +9,28 @@ import JavaScriptCore
 
 class JSBridge  {
 
-    var js:JSContext! = JSContext()
+    var jsContext:JSContext! = JSContext()
 
     init() {
         initializeJS()
     }
 
+    func jsApiCall(_ apiCallback:((Double, Double) -> Void)){
+        guard let convertedCallbackToJS = JSValue(object: apiCallback, in: jsContext) else { return }
+        print("convertedCallbackToJS = \(convertedCallbackToJS)")
+
+        guard let funcToParse = jsContext.objectForKeyedSubscript("apiCall") else { return }
+        print("funcToParse = \(funcToParse)")
+
+//        funcToParse.call(withArguments:[])
+        funcToParse.call(withArguments:[convertedCallbackToJS])
+
+    }
 
     func jsProp(name:String)->Dictionary<String, String> {
-        let funcToParse = js.objectForKeyedSubscript(name)
-        print("parseFunciton = \(funcToParse)")
-        guard let parsed = funcToParse?.call(withArguments: [funcToParse]) else {
-            print("Unable to parse function")
+        let funcToParse = jsContext.objectForKeyedSubscript(name)
+        guard let parsed = funcToParse?.call(withArguments: []) else {
+            print("Unable to parse returned object")
             return ["":""]
         }
 
@@ -32,9 +42,8 @@ class JSBridge  {
     }
 
     func jsFunc(name:String)->String {
-        let funcToParse = js.objectForKeyedSubscript(name)
-        print("parseFunciton = \(funcToParse)")
-        guard let parsed = funcToParse?.call(withArguments: [funcToParse]) else {
+        let funcToParse = jsContext.objectForKeyedSubscript(name)
+        guard let parsed = funcToParse?.call(withArguments: []) else {
             print("Unable to parse function")
             return ""
         }
@@ -50,7 +59,7 @@ class JSBridge  {
 
         do {
             let common = try String(contentsOfFile: commonJSPath, encoding: String.Encoding.utf8)
-            js.evaluateScript(common)
+            jsContext.evaluateScript(common)
             print("script evaluated")
 
         } catch (let error) {
