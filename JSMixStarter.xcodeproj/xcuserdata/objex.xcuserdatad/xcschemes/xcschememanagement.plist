@@ -7,7 +7,30 @@
 		<key>JSMixStarter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+		<key>Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7966A7661F9AD3C30063F2BF</key>
+		<dict>
+			<key>primary</key>
+			<true />
+		</dict>
+		<key>7966A77C1F9AD3C30063F2BF</key>
+		<dict>
+			<key>primary</key>
+			<true />
+		</dict>
+		<key>7966A7871F9AD3C30063F2BF</key>
+		<dict>
+			<key>primary</key>
+			<true />
 		</dict>
 	</dict>
 </dict>
