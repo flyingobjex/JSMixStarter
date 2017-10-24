@@ -6,12 +6,12 @@
 import Foundation
 import JavaScriptCore
 
-/**
- The example completion block is cast as an objection C block, otherwise the javascript
- context will not recognize the block and it won't execute.
-*/
 typealias ExampleCompletionBlock = @convention(block) (_ result:String) -> Void
 
+/**
+ This class will have examples of bridging Swift and Javascript code, allowing
+ Javascript libraries to be called on with native Swift code.
+*/
 class JSBridge  {
 
     var context:JSContext! = JSContext()

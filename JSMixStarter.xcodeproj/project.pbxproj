@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50B9DFF7159BBBE458B4511D /* Pods_JSMixStarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3274908C8BD73DAEFED3BB5D /* Pods_JSMixStarterUITests.framework */; };
 		64A5702BAE915F758AF58057 /* bundle.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A570AF638E52D2FF746E74 /* bundle.js */; };
+		64A57F106ED187A50BFE8552 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 64A57F1B6FC5AB49ED376EE3 /* README.md */; };
 		7966A7721F9AD3C30063F2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7966A7701F9AD3C30063F2BF /* Main.storyboard */; };
 		7966A7741F9AD3C30063F2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7966A7731F9AD3C30063F2BF /* Assets.xcassets */; };
 		7966A7771F9AD3C30063F2BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7966A7751F9AD3C30063F2BF /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 		38E813A8BF47D67438A4E8E8 /* Pods-JSMixStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSMixStarter.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSMixStarter/Pods-JSMixStarter.release.xcconfig"; sourceTree = "<group>"; };
 		412D3AB5B98BDB790512AB30 /* Pods-JSMixStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSMixStarterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSMixStarterTests/Pods-JSMixStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64A570AF638E52D2FF746E74 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
+		64A57F1B6FC5AB49ED376EE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7966A7671F9AD3C30063F2BF /* JSMixStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSMixStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7966A7711F9AD3C30063F2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7966A7731F9AD3C30063F2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				7966A7681F9AD3C30063F2BF /* Products */,
 				C174FCD26015C211A96E8DAE /* Pods */,
 				36DFCF1918BDD1BB3660F5BA /* Frameworks */,
+				64A57F1B6FC5AB49ED376EE3 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -516,6 +519,7 @@
 				79EF2FCA1F9C3C4100D4ED4B /* AppDelegate.swift in Sources */,
 				79EF2FC61F9C3C3A00D4ED4B /* JSBridge.swift in Sources */,
 				64A5702BAE915F758AF58057 /* bundle.js in Sources */,
+				64A57F106ED187A50BFE8552 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
