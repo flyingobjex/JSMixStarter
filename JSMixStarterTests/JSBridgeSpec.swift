@@ -25,7 +25,13 @@ class JSBridgeSpec: QuickSpec {
             }
 
             it("should load data from an api"){
-
+                waitUntil(timeout: 4){ done in
+                    let callback: ApiCompletionBlock = { result in
+                        print("result = \(result)")
+                        done()
+                    }
+                    bridge.callApi(callback);
+                }
             }
 
             it("javascript should execute a callback function created in Swift"){

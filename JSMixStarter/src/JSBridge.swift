@@ -7,6 +7,7 @@ import Foundation
 import JavaScriptCore
 
 typealias ExampleCompletionBlock = @convention(block) (_ result:String) -> Void
+typealias ApiCompletionBlock = @convention(block) (_ result:Dictionary<String, String>) -> Void
 
 /**
  This class will have examples of bridging Swift and Javascript code, allowing
@@ -51,6 +52,15 @@ class JSBridge  {
             print("JS ERROR: \(value) \(moreInfo)")
         }
 
+    }
+
+    func callApi(_ callback:ApiCompletionBlock) {
+        guard let convertedCallbackToJS = JSValue(object: callback, in: context) else { return }
+        guard let funcToParse = context.objectForKeyedSubscript("callbackExample") else { return }
+        guard let _ = funcToParse.call(withArguments:[convertedCallbackToJS]) else {
+            print("unable to call function")
+            return
+        }
     }
 
     /**
