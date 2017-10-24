@@ -31,6 +31,7 @@ https://github.com/Quick/Quick/blob/master/Documentation/en-us/InstallingQuick.m
 There are a few starter tests in place that which demonstrate:
     - Invoking a Javascript function from native Swift code
     - Passing a Swift callback to Javascript for asynchronous invocation
+    
     ```swift
      let callback: ExampleCompletionBlock = { result in
                             print("result = \(result)")
