@@ -9,12 +9,17 @@ platforms, it allows teams to leverage any in-house Javascript skills in their
 native applications without requiring use of a full-blown hybrid framework like
 PhoneGap or Ionic (or React Native).  
 
+It should help simplify the gradual incorporation of javascript and the subsequent 
+incremental  "hybridization" of existing native apps.
+
 # Motivation #
 Development speed- Unlike testing in Javascript, iOS & Android must be compiled 
-each time tests are run.  Even with the improvements in XCode 9, this is on orders
-of magnitude slower than running tests in Javascript.  By developing certain services 
-or business logic in Javascript instead of Swift, this can speed up development time,
-especially if the code can be shared with Android and/or web applications.
+each time tests are run.  Even with the improvements in XCode 9, Swift's testing 
+feedback loop is orders of magnitude slower than running tests in Javascript. 
+
+By developing certain services or business logic in Javascript instead of Swift, 
+this can speed up development time, especially when the code can be shared with 
+Android and/or web applications.
 
 # Getting Started #
 This starter project includes a BDD test harness using Quick & Nimble and 

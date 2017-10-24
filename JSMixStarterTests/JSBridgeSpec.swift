@@ -10,6 +10,10 @@ import Quick
 
 @testable import JSMixStarter
 
+/**
+ Tests are ordered with the first test at the bottom and the latest test
+ at the top.
+*/
 class JSBridgeSpec: QuickSpec {
     override func spec() {
         describe("The Javascript Bridge") {
