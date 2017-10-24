@@ -48,6 +48,7 @@ waitUntil(timeout: 4){ done in
                         
 // Swift callback is passed to Javascript code for invocation
 bridge.callJSFunction(callback); 
+// (wait for asynchronous javascript call to finish)
 // result from Javascript = ["foo": "bar"]
 ```
 
