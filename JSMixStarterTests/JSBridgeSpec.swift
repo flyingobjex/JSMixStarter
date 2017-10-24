@@ -24,7 +24,7 @@ class JSBridgeSpec: QuickSpec {
                 bridge = nil
             }
 
-            it("should load data from an api"){
+            xit("should load data from an api"){
                 waitUntil(timeout: 4){ done in
                     let callback: ApiCompletionBlock = { result in
                         print("result = \(result)")
@@ -38,6 +38,7 @@ class JSBridgeSpec: QuickSpec {
                 waitUntil(timeout: 4){ done in
                     let callback: ExampleCompletionBlock = { result in
                         print("result = \(result)")
+                        expect(result).toNot(beNil())
                         done()
                     }
                     bridge.callbackExample(callback);

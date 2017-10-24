@@ -55,9 +55,10 @@ class JSBridge  {
     }
 
     func callApi(_ callback:ApiCompletionBlock) {
-        guard let convertedCallbackToJS = JSValue(object: callback, in: context) else { return }
-        guard let funcToParse = context.objectForKeyedSubscript("callbackExample") else { return }
-        guard let _ = funcToParse.call(withArguments:[convertedCallbackToJS]) else {
+        guard let jsCallback = JSValue(object: callback, in: context),
+              let jsFunc = context.objectForKeyedSubscript("apiCall"),
+              let _ = jsFunc.call(withArguments:[jsCallback])
+        else {
             print("unable to call function")
             return
         }
@@ -77,11 +78,12 @@ class JSBridge  {
         - Returns: Void
     */
     func callbackExample(_ callback: ExampleCompletionBlock) {
-        guard let convertedCallbackToJS = JSValue(object: callback, in: context) else { return }
-        guard let funcToParse = context.objectForKeyedSubscript("callbackExample") else { return }
-        guard let _ = funcToParse.call(withArguments:[convertedCallbackToJS]) else {
-            print("unable to call function")
-            return
+        guard let jsCallback = JSValue(object: callback, in: context),
+              let jsFunc = context.objectForKeyedSubscript("callbackExample"),
+              let _ = jsFunc.call(withArguments:[jsCallback])
+        else {
+                print("unable to call function")
+                return
         }
     }
 
