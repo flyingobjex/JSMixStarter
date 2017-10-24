@@ -30,15 +30,25 @@ https://github.com/Quick/Quick/blob/master/Documentation/en-us/InstallingQuick.m
 # Run the tests #
 There are a few starter tests in place that which demonstrate:
     - Invoking a Javascript function from native Swift code
-    - Passing a Swift callback to Javascript for asynchronous invocation
+    - Passing a Swift callback to Javascript for asynchronous invocation (example
+    from test below)
     
 ```swift
-     let callback: ExampleCompletionBlock = { result in
-                            print("result = \(result)")
-                            expect(result).toNot(beNil())
-                            done()
-                        }
-                        bridge.callbackExample(callback);
+var bridge:JSBridge! = JSBridge("main.js"); // Instantiate as class variable
+// ...
+
+it("should load data from an api"){
+waitUntil(timeout: 4){ done in    
+        let callback: ApiCompletionBlock = { result in
+            print("result from Javascript = \(result)") 
+            done()
+        }    
+    }
+}
+                        
+// Swift callback is passed to Javascript code for invocation
+bridge.callJSFunction(callback); 
+// result from Javascript = ["foo": "bar"]
 ```
 
 
