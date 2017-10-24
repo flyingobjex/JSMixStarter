@@ -32,14 +32,14 @@ There are a few starter tests in place that which demonstrate:
     - Invoking a Javascript function from native Swift code
     - Passing a Swift callback to Javascript for asynchronous invocation
     
-    ```swift
+```swift
      let callback: ExampleCompletionBlock = { result in
                             print("result = \(result)")
                             expect(result).toNot(beNil())
                             done()
                         }
                         bridge.callbackExample(callback);
-    ```
+```
 
 
 # Roadmap #
