@@ -1,11 +1,6 @@
-// const $ = require('jquery');
+
 $('#target').html('@@@@@');
 $('#target2').html('44442352322222222244444');
-
-
-function apiCall(callback){
-
-}
 
 function callbackExample(callback){
     callback("results")

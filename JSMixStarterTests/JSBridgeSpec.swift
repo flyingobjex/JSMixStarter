@@ -28,10 +28,11 @@ class JSBridgeSpec: QuickSpec {
                 bridge = nil
             }
 
-            xit("should load data from an api"){
+            it("should load data from an api"){
                 waitUntil(timeout: 4){ done in
                     let callback: ApiCompletionBlock = { result in
                         print("result = \(result)")
+                        expect(result).to(equal(["foo":"bar", "bar":"foo"]))
                         done()
                     }
                     bridge.callApi(callback);
@@ -41,8 +42,7 @@ class JSBridgeSpec: QuickSpec {
             it("javascript should execute a callback function created in Swift"){
                 waitUntil(timeout: 4){ done in
                     let callback: ExampleCompletionBlock = { result in
-                        print("result = \(result)")
-                        expect(result).toNot(beNil())
+                        expect(result).to(equal("results"))
                         done()
                     }
                     bridge.callbackExample(callback);
