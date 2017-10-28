@@ -28,10 +28,14 @@ class JSBridgeSpec: QuickSpec {
                 bridge = nil
             }
 
+            it("should load function from bundled file"){
+
+            }
+
             it("should load data from an api"){
                 waitUntil(timeout: 4){ done in
                     let callback: ApiCompletionBlock = { result in
-                        print("result = \(result)")
+//                        print("result = \(result)")
                         expect(result).to(equal(["foo":"bar", "bar":"foo"]))
                         done()
                     }

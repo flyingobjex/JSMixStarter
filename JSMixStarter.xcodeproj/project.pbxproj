@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		50B9DFF7159BBBE458B4511D /* Pods_JSMixStarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3274908C8BD73DAEFED3BB5D /* Pods_JSMixStarterUITests.framework */; };
-		64A5702BAE915F758AF58057 /* bundle.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A570AF638E52D2FF746E74 /* bundle.js */; };
 		64A57103D6BE268932362322 /* api.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57FC0BBA23B2AF6F3FB56 /* api.js */; };
+		64A575E6DB144F4E94CA7F0A /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A5771B697A04AED3E1D082 /* index.js */; };
 		64A579D28126C2E559E531EC /* api.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57FC0BBA23B2AF6F3FB56 /* api.js */; };
 		64A57AB4C9460DC024F46D0F /* jquery-3.2.1.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57D53261C656835F7471B /* jquery-3.2.1.min.js */; };
 		64A57F106ED187A50BFE8552 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 64A57F1B6FC5AB49ED376EE3 /* README.md */; };
 		7926DB581FA450B5006373AD /* jquery-3.2.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 64A57D53261C656835F7471B /* jquery-3.2.1.min.js */; };
 		7926DB591FA450B5006373AD /* api.js in Resources */ = {isa = PBXBuildFile; fileRef = 64A57FC0BBA23B2AF6F3FB56 /* api.js */; };
+		7926DB5D1FA4808D006373AD /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 64A5771B697A04AED3E1D082 /* index.js */; };
 		7966A7721F9AD3C30063F2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7966A7701F9AD3C30063F2BF /* Main.storyboard */; };
 		7966A7741F9AD3C30063F2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7966A7731F9AD3C30063F2BF /* Assets.xcassets */; };
 		7966A7771F9AD3C30063F2BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7966A7751F9AD3C30063F2BF /* LaunchScreen.storyboard */; };
@@ -28,7 +29,6 @@
 		79EF2FCA1F9C3C4100D4ED4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2FC71F9C3C4100D4ED4B /* AppDelegate.swift */; };
 		79EF2FCB1F9C3C4100D4ED4B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2FC81F9C3C4100D4ED4B /* FirstViewController.swift */; };
 		79EF2FCC1F9C3C4100D4ED4B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF2FC91F9C3C4100D4ED4B /* SecondViewController.swift */; };
-		79EF2FD11F9C58C300D4ED4B /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 64A570AF638E52D2FF746E74 /* bundle.js */; };
 		79EF2FD51F9C647F00D4ED4B /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 79EF2FD41F9C647F00D4ED4B /* main.js */; };
 		9B8DBF3343B670C0181D2D94 /* Pods_JSMixStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D3A47D533230F33801C464 /* Pods_JSMixStarter.framework */; };
 		BD50C5032D86E4FB0601FF69 /* Pods_JSMixStarterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BE9BCEC7615A7F7008A19B /* Pods_JSMixStarterTests.framework */; };
@@ -55,8 +55,7 @@
 		3274908C8BD73DAEFED3BB5D /* Pods_JSMixStarterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSMixStarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E813A8BF47D67438A4E8E8 /* Pods-JSMixStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSMixStarter.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSMixStarter/Pods-JSMixStarter.release.xcconfig"; sourceTree = "<group>"; };
 		412D3AB5B98BDB790512AB30 /* Pods-JSMixStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSMixStarterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSMixStarterTests/Pods-JSMixStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		64A570A0E2C88B7AAF026DD4 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
-		64A570AF638E52D2FF746E74 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
+		64A5771B697A04AED3E1D082 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		64A57D53261C656835F7471B /* jquery-3.2.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-3.2.1.min.js"; sourceTree = "<group>"; };
 		64A57F1B6FC5AB49ED376EE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		64A57FC0BBA23B2AF6F3FB56 /* api.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = api.js; sourceTree = "<group>"; };
@@ -134,7 +133,6 @@
 		64A5715FF97B405002E97B2D /* Javascript */ = {
 			isa = PBXGroup;
 			children = (
-				64A570A0E2C88B7AAF026DD4 /* app.js */,
 			);
 			path = Javascript;
 			sourceTree = "<group>";
@@ -143,9 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				79EF2FD41F9C647F00D4ED4B /* main.js */,
-				64A570AF638E52D2FF746E74 /* bundle.js */,
 				64A57D53261C656835F7471B /* jquery-3.2.1.min.js */,
 				64A57FC0BBA23B2AF6F3FB56 /* api.js */,
+				64A5771B697A04AED3E1D082 /* index.js */,
 			);
 			path = js;
 			sourceTree = "<group>";
@@ -349,9 +347,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7926DB5D1FA4808D006373AD /* index.js in Resources */,
 				7926DB581FA450B5006373AD /* jquery-3.2.1.min.js in Resources */,
 				7926DB591FA450B5006373AD /* api.js in Resources */,
-				79EF2FD11F9C58C300D4ED4B /* bundle.js in Resources */,
 				7966A7771F9AD3C30063F2BF /* LaunchScreen.storyboard in Resources */,
 				79EF2FD51F9C647F00D4ED4B /* main.js in Resources */,
 				7966A7741F9AD3C30063F2BF /* Assets.xcassets in Resources */,
@@ -549,10 +547,10 @@
 				79EF2FCB1F9C3C4100D4ED4B /* FirstViewController.swift in Sources */,
 				79EF2FCA1F9C3C4100D4ED4B /* AppDelegate.swift in Sources */,
 				79EF2FC61F9C3C3A00D4ED4B /* JSBridge.swift in Sources */,
-				64A5702BAE915F758AF58057 /* bundle.js in Sources */,
 				64A57F106ED187A50BFE8552 /* README.md in Sources */,
 				64A57AB4C9460DC024F46D0F /* jquery-3.2.1.min.js in Sources */,
 				64A57103D6BE268932362322 /* api.js in Sources */,
+				64A575E6DB144F4E94CA7F0A /* index.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

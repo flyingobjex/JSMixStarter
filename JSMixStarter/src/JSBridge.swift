@@ -31,8 +31,9 @@ class JSBridge  {
    */
     init(_ jsFileName:String) {
 
-        loadScript(name: "main")
-        loadScript(name: "api")
+        loadScript("main")
+        loadScript("api")
+        loadScript("index")
 
         guard let commonJSPath = Bundle.main.path(forResource: jsFileName, ofType: "js") else {
             print("Unable to read resource files.")
@@ -55,14 +56,16 @@ class JSBridge  {
             print("JS ERROR: \(value) \(moreInfo)")
         }
 
+        print("'testProp' in context is defined as: \(context?.objectForKeyedSubscript("testProp"))")
+        print("'helloApp' in context is defined as: \(context?.objectForKeyedSubscript("helloApp"))")
         print("'$' in context is defined as: \(context?.objectForKeyedSubscript("$"))")
         print("'jQuery' in context is defined as: \(context?.objectForKeyedSubscript("jQuery"))")
 
     }
 
-    func loadScript(name:String){
+    func loadScript(_ name:String){
         guard let path = Bundle.main.path(forResource: name, ofType: "js") else {
-            print("could not load jquery path")
+            print("could not load script with name = \(name)")
             return
         }
 

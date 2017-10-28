@@ -63,3 +63,8 @@ bridge.callJSFunction(callback);
 - Add asynchronous JQuery API calls to Wikipedia and invoke them with Swift callbacks
 - Conversion of JSON objects to well-formed Swift Dictionaries of type <String, Any>
 - add Javascript project w/ webpack to compile js application & copy to iOS project 
+
+
+# Resources #
+Explains build process integrating Webpack
+https://medium.com/social-tables-tech/using-javascriptcore-in-a-production-ios-app-f09cfcd91fd6
