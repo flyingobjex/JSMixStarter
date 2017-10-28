@@ -75,8 +75,8 @@ var app =
 $('#target').html('@@@@@');
 $('#target2').html('44442352322222222244444');
 
-var helloWorld = function helloWorld() {
-    return "Hello World bundle.js !*!*! ";
+function helloWorld() {
+    return "Hello Woasdgrld bundasdfasdfle.js !*!*! ";
 };
 
 var jsData = {

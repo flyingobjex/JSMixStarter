@@ -50,13 +50,16 @@ class JSBridgeSpec: QuickSpec {
             }
 
 
-            it("should load a JSON object from bridge"){
-                let res = bridge.prop(name: "jsData")
-                expect(res).to(equal(["foo":"bar", "bar":"foo"]))
+            it("should load props- a JSON object from bridge"){
+                waitUntil(timeout:4){ done in
+                    let res = bridge.prop(name: "jsData")
+                    expect(res).to(equal(["foo":"bar", "bar":"foo"]))
+                    done()
+                }
             }
 
             it("should call helloWorld via bridge"){
-                expect(bridge.synchronousFunc(name:"helloWorld")).to(equal("Hello World from main!!"))
+                expect(bridge.synchronousFunc(name:"helloWorld")).to(equal("Hello Wold from main.js !*!*!"))
             }
 
             it("should call a javascript method on JSBridge"){

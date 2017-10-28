@@ -1,5 +1,5 @@
 
-## JSMixStarter · Goals
+## JSMixStarter · Goals ##
 The goal of this project is to build a thin bridge between Javascript and 
 native Swift & Android code so that a common javascript codebase can be slowly 
 introduced and shared between web, native iOS and native Android applications.
@@ -23,7 +23,8 @@ Android and/or web applications.
 
 # Getting Started #
 This starter project includes a BDD test harness using Quick & Nimble and 
-has a mirror javascript project, js-mix-starter, that uses Mocha & Chai.
+has a mirror javascript project, js-mix-starter, that uses Mocha & Chai and
+webpack to compile the shared javascript codebase.
    
 JSMixStarter uses Cocoapods for dependency management, so after cloning
 the repo, run `Pod install`.  
