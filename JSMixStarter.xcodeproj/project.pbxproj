@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		50B9DFF7159BBBE458B4511D /* Pods_JSMixStarterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3274908C8BD73DAEFED3BB5D /* Pods_JSMixStarterUITests.framework */; };
 		64A57103D6BE268932362322 /* api.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57FC0BBA23B2AF6F3FB56 /* api.js */; };
+		64A5754391A219FAB4D58BB3 /* package-lock.json in Resources */ = {isa = PBXBuildFile; fileRef = 64A57E8559FF71E2927B8070 /* package-lock.json */; };
 		64A575E6DB144F4E94CA7F0A /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A5771B697A04AED3E1D082 /* index.js */; };
+		64A5782622E3DA382685B26A /* webpack.config.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57369A3E61E7798EAA93D /* webpack.config.js */; };
 		64A579D28126C2E559E531EC /* api.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57FC0BBA23B2AF6F3FB56 /* api.js */; };
+		64A57AAE231969CAF62CB95C /* index.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57DA373DEE5D5D01D5019 /* index.js */; };
 		64A57AB4C9460DC024F46D0F /* jquery-3.2.1.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 64A57D53261C656835F7471B /* jquery-3.2.1.min.js */; };
+		64A57AEE25F6902805CCDDD4 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 64A577ACD3220E4E933E66EB /* package.json */; };
 		64A57F106ED187A50BFE8552 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 64A57F1B6FC5AB49ED376EE3 /* README.md */; };
 		7926DB581FA450B5006373AD /* jquery-3.2.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 64A57D53261C656835F7471B /* jquery-3.2.1.min.js */; };
 		7926DB591FA450B5006373AD /* api.js in Resources */ = {isa = PBXBuildFile; fileRef = 64A57FC0BBA23B2AF6F3FB56 /* api.js */; };
@@ -55,8 +59,12 @@
 		3274908C8BD73DAEFED3BB5D /* Pods_JSMixStarterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSMixStarterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E813A8BF47D67438A4E8E8 /* Pods-JSMixStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSMixStarter.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSMixStarter/Pods-JSMixStarter.release.xcconfig"; sourceTree = "<group>"; };
 		412D3AB5B98BDB790512AB30 /* Pods-JSMixStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSMixStarterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSMixStarterTests/Pods-JSMixStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64A57369A3E61E7798EAA93D /* webpack.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = webpack.config.js; sourceTree = "<group>"; };
 		64A5771B697A04AED3E1D082 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		64A577ACD3220E4E933E66EB /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		64A57D53261C656835F7471B /* jquery-3.2.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-3.2.1.min.js"; sourceTree = "<group>"; };
+		64A57DA373DEE5D5D01D5019 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		64A57E8559FF71E2927B8070 /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		64A57F1B6FC5AB49ED376EE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		64A57FC0BBA23B2AF6F3FB56 /* api.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = api.js; sourceTree = "<group>"; };
 		7966A7671F9AD3C30063F2BF /* JSMixStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSMixStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +141,10 @@
 		64A5715FF97B405002E97B2D /* Javascript */ = {
 			isa = PBXGroup;
 			children = (
+				64A577ACD3220E4E933E66EB /* package.json */,
+				64A57DA373DEE5D5D01D5019 /* index.js */,
+				64A57E8559FF71E2927B8070 /* package-lock.json */,
+				64A57369A3E61E7798EAA93D /* webpack.config.js */,
 			);
 			path = Javascript;
 			sourceTree = "<group>";
@@ -354,6 +366,8 @@
 				79EF2FD51F9C647F00D4ED4B /* main.js in Resources */,
 				7966A7741F9AD3C30063F2BF /* Assets.xcassets in Resources */,
 				7966A7721F9AD3C30063F2BF /* Main.storyboard in Resources */,
+				64A57AEE25F6902805CCDDD4 /* package.json in Resources */,
+				64A5754391A219FAB4D58BB3 /* package-lock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +565,8 @@
 				64A57AB4C9460DC024F46D0F /* jquery-3.2.1.min.js in Sources */,
 				64A57103D6BE268932362322 /* api.js in Sources */,
 				64A575E6DB144F4E94CA7F0A /* index.js in Sources */,
+				64A57AAE231969CAF62CB95C /* index.js in Sources */,
+				64A5782622E3DA382685B26A /* webpack.config.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
